@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(137, 177, 85);
+    color: #fff;
+    font-family: 'Dosis', sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header{
+    font-family: 'Bebas Neue', cursive;
+    height: 250px;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    position: relative;
+    animation: header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes header{
+    0%{top: -100px;}
+    100%{top: 0px;}
+}
+
+.main{
+    margin: 2rem 0;
+
+}
+.text-left{
+    position: relative;
+    text-align: justify;
+    animation: textLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textLeft{
+    0%{
+        left: -1000px;
+    }
+    85%{
+        left: 50px;
+    }
+    100%{
+        left: 0;
+    }
+
+}
+
+.text-right{
+    position: relative;
+    margin-top: 2rem;
+    text-align: right;
+    animation: textRight;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes textRight{
+    0%{
+        right: -1000px;
+    }
+    85%{
+        right: 50px;
+    }
+    100%{
+        right: 0;
+    }
+
+}
+
+.footer{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.btn{
+    opacity: 0;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 1rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+    animation-name: aniBtn;
+    animation-duration: 11s;
+    animation-fill-mode: forwards;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: rgb(137, 177, 85);
+}
+
+@keyframes aniBtn{
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+}
